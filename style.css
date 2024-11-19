@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.calculatrice {
+    border: 1px solid black;
+    margin-top: 64px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 32px;
+}
+
+.boutons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap : 16px;
+    grid-template-areas: 
+    "effacer effacer effacer diviser"
+    "sept huit neuf multiplier"
+    "quatre cinq six moins"
+    "un deux trois plus"
+    "zero zero zero egal"
+    ;
+}
+
+
+
+.button_0 { grid-area: zero;}
+.button_1 { grid-area: un;}
+.button_2 { grid-area: deux;}
+.button_3 { grid-area: trois;}
+.button_4 { grid-area: quatre;}
+.button_5 { grid-area: cinq;}
+.button_6 { grid-area: six;}
+.button_7 { grid-area: sept;}
+.button_8 { grid-area: huit;}
+.button_9 { grid-area: neuf;}
+.button_plus { grid-area: plus;}
+.button_moins { grid-area: moins;}
+.button_multiplier { grid-area: multiplier;}
+.button_diviser { grid-area: diviser;}
+.button_egal { grid-area: egal;}
+.button_effacer { grid-area: effacer;}
