@@ -5,14 +5,36 @@ body {
 
 .calculatrice {
     border: 1px solid black;
-    margin-top: 64px;
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 32px;
+    background-color: black;
 }
+
+
+input{
+    margin-bottom: 32px;
+    height: 130px;
+    width: 270px;
+    font-size: 60px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+button {
+    background-color: #FF6F00;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+  }
+  
 
 .boutons{
     display: grid;
@@ -27,7 +49,6 @@ body {
     "zero zero zero egal"
     ;
 }
-
 
 
 .button_0 { grid-area: zero;}
@@ -46,3 +67,5 @@ body {
 .button_diviser { grid-area: diviser;}
 .button_egal { grid-area: egal;}
 .button_effacer { grid-area: effacer;}
+
+
